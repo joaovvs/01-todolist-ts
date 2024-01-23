@@ -1,0 +1,39 @@
+.task {
+    display: flex;
+    justify-content: flex-start;
+
+    padding: 1rem;
+
+    border-radius: 8px;
+    background: var(--gray-500);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+    gap: 1rem;
+
+}
+
+
+.task p{
+    display: flex;
+    flex: 1;
+
+    color: var(--gray-100);
+    font-size: 0.875rem;
+}
+
+.task .removeBtn {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 5px;
+    color: var(--gray-300);
+    border: none;
+    background: transparent;
+    border-radius: 4px;
+    line-height: 0;
+
+    cursor: pointer;
+}
+
+.task .removeBtn:hover {
+    color: var(--danger);
+    background: var(--gray-400);
+}
