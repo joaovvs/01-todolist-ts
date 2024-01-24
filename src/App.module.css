@@ -5,13 +5,14 @@
   align-items: center;
   justify-content: flex-start;
   background: var(--gray-600);
+
 }
 
 .content {
   display: flex;
-  flex: 1;
   flex-direction: column;
   width: 46rem;
+
 
 }
 
@@ -80,6 +81,10 @@
   flex-direction: column;
   gap: 1.4rem;
   margin-top: 4rem;
+
+  overflow: hidden;
+
+  margin-bottom: 2rem;
 }
 
 .info { 
@@ -109,6 +114,7 @@
   display:flex;
   flex-direction: column;
   gap: 0.75rem;
+
 }
 
 
