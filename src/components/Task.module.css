@@ -11,14 +11,79 @@
 
 }
 
+.checkboxUnchecked{
+    border: none;
+    color: var(--blue);
+    background: transparent;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 0;
 
-.task p{
+    padding: 3.273px;
+
+    cursor: pointer;
+} 
+
+.checkboxUnchecked:hover{
+    border: none;
+    color: var(--blue-dark);
+} 
+
+.checkboxChecked{
+    border: none;
+    color: var(--purple-dark);
+    background: transparent;
+    line-height: 0;
+
+    cursor: pointer;
+} 
+
+
+.checkboxChecked:hover{
+    border: none;
+} 
+
+
+.taskDescriptionUndone {
     display: flex;
     flex: 1;
 
     color: var(--gray-100);
     font-size: 0.875rem;
 }
+
+.taskDescriptionDone {
+    display: flex;
+    flex: 1;
+
+
+    color: var(--gray-300);
+    font-size: 0.875rem;
+    text-decoration: line-through;
+}
+
+.task button {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 5px;
+    color: var(--blue);
+    border: none;
+    background: transparent;
+    border-radius: 999px;
+    line-height: 0;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+
+    cursor: pointer;
+}
+
+.task button:focus {
+    outline: none;
+    border-radius: 8px;
+  }
 
 .task .removeBtn {
     width: 1.5rem;
@@ -29,6 +94,11 @@
     background: transparent;
     border-radius: 4px;
     line-height: 0;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
 
     cursor: pointer;
 }

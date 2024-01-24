@@ -44,7 +44,7 @@
 }
 
 
-.newTask button {
+.submit {
   display: inline-flex;
 
   border: none;
@@ -66,6 +66,68 @@
   transition: color 0.2s;
 }
 
-.newTask button:hover {
+.submit:hover {   
   background: var(--blue);
+}
+
+.submit:focus {
+  outline: none;
+  border: 1px solid var(--purple)
+}
+
+.taskWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  margin-top: 4rem;
+}
+
+.info { 
+  display: flex;
+  justify-content: space-between;
+}
+
+.info h2 {
+  color: var(--blue);
+  font-size: 0.875rem;
+}
+
+.info h2 + h2 {
+  color: var(--purple);
+}
+
+.info h2 span {
+  color: var(--gray-200);
+  font-size: 0.75rem;
+  padding: 0 8px;
+  background: var(--gray-400);
+  border-radius: 100%;
+  margin-left: 0.5rem;
+}
+
+.taskList {
+  display:flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+
+@media (max-width: 768px) {
+  html {
+      font-size: 87.5%;
+  }
+  .content {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 75%;
+}
+  .content {
+
+    width: 100%;
+    padding: 0 2rem;
+  }
 }
