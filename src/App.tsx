@@ -82,7 +82,7 @@ function App() {
                 Tarefas Criadas <span>{createdCounter}</span>
               </h2>
               <h2>
-                Tarefas Concluídas <span>{doneCounter}</span>
+                Tarefas Concluídas <span>{doneCounter>0 ? `${doneCounter} de ${createdCounter}`: doneCounter }</span>
               </h2>
             </div>
           </header>

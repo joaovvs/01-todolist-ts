@@ -11,7 +11,7 @@
 
 }
 
-.checkboxUnchecked{
+.task .checkboxUnchecked{
     border: none;
     color: var(--blue);
     background: transparent;
@@ -24,12 +24,12 @@
     cursor: pointer;
 } 
 
-.checkboxUnchecked:hover{
+.task .checkboxUnchecked:hover{
     border: none;
     color: var(--blue-dark);
 } 
 
-.checkboxChecked{
+.task .checkboxChecked{
     border: none;
     color: var(--purple-dark);
     background: transparent;
@@ -39,8 +39,9 @@
 } 
 
 
-.checkboxChecked:hover{
+.task .checkboxChecked:hover{
     border: none;
+    color: var(--purple);
 } 
 
 
